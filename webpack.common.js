@@ -12,6 +12,24 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192
+            }
+          }
+        ]
+      },
+      {
+        test: /\.svg$/,
+        use: [
+          'babel-loader',
+          'vue-svg-loader'
+        ]
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
@@ -26,14 +44,23 @@ module.exports = {
           'vue-style-loader',
           'css-loader'
         ]
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'vue-style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
       }
     ]
   },
   resolve: {
     alias: {
+      '~': resolve(__dirname, '.'),
       '@': resolve(__dirname, './src')
     },
-    extensions: ['*', '.vue', '.js']
+    extensions: ['*', '.vue', '.js', '.svg']
   },
   plugins: [
     new CleanWebpackPlugin(),

@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1>SkalBooks</h1>
+    <p>
+      If you're seeing this, everything is working!
+    </p>
   </div>
 </template>
 
