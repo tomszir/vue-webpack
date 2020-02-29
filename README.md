@@ -4,18 +4,36 @@ A simple template for [Vue.js](https://github.com/vuejs/vue) complete with [Webp
 
 # Features
 
-* [Vue Router](https://github.com/vuejs/vue-router) - The official router for [Vue.js](https://github.com/vuejs/vue)
+* [vue-router](https://github.com/vuejs/vue-router) - The official router for [Vue.js](https://github.com/vuejs/vue)
 
-* [Vuex](https://github.com/vuejs/vuex) - Centralized state management for [Vue.js](https://github.com/vuejs/vue)
+* [vuex](https://github.com/vuejs/vuex) - Centralized state management for [Vue.js](https://github.com/vuejs/vue)
 
-* [Vue Meta](https://github.com/nuxt/vue-meta) - Manage HTML metadata in [Vue.js](https://github.com/vuejs/vue)  components
+* [vue-meta](https://github.com/nuxt/vue-meta) - Manage HTML metadata in [Vue.js](https://github.com/vuejs/vue)  components
 
-* [Webpack](https://github.com/webpack/webpack) - A JavaScript module bundler.
+* [webpack](https://github.com/webpack/webpack) - A JavaScript module bundler.
 
 
 # Webpack Configuration
 
-* ...to be detailed (later)
+The webpack configuration uses these plugins & loaders.
+
+* [webpack-dev-server]()
+
+* [vue-loader]()
+
+* [vue-svg-loader]()
+
+* [babel-loader]()
+
+* [sass-loader]()
+
+* [url-loader]()
+
+* [clean-webpack-plugin]()
+
+* [html-webpack-plugin]()
+
+* [friendly-errors-webpack-plugin]()
 
 # Usage
 
